@@ -7,6 +7,39 @@
     padding-bottom: 25px;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.item {
+    order: 5;
+    flex-shrink: 3;
+}
+
+.flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+   
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.center-children {
+    text-align: center;
+}
+
 .move {
     width: 100px;
     height: 25px;
