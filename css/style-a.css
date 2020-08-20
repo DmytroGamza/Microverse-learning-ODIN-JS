@@ -1,0 +1,65 @@
+.small-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 62.5rem;
+    width: 100%;
+}
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+h1 {
+    font-size: 2.125rem;
+}
+
+body {
+    font-family: 'Open Sans', Verdana, Geneva, sans-serif, sans-serif;
+    height: auto;
+}
+
+.columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left;
+}
+
+#questions {
+    border: thin solid #ccc;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.question {
+    position: relative;
+    font-size: 79%;
+}
+
+.small-12 {
+    width: 100%;
+}
+
+.question-text {
+    display: inline;
+}
+label {
+    color: #4d4d4d;
+    cursor: pointer;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.correct {
+    visibility: hidden;
+    display: inline;
+}
