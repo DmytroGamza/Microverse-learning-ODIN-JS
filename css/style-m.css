@@ -1,0 +1,72 @@
+.back {
+    text-align: right;
+}
+
+
+div {
+    display: block;
+}
+
+.c-imageslider .c-imageslider__images {
+    font-size: 0;
+    position: relative;
+    -ms-touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.c-imageslider .c-imageslider__image--left {
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.c-imageslider .c-imageslider__image {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 0;
+    max-height: 100%;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: inherit;
+    vertical-align: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.c-imageslider .c-imageslider__handle {
+    top: 0;
+    height: 100%;
+    left: 50%;
+    width: 40px;
+    margin-left: -20px;
+    position: absolute;
+    z-index: 10;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: inherit;
+    vertical-align: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+element.style {
+    left: 99.537%;
+}
