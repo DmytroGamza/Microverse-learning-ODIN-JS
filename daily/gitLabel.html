@@ -18,7 +18,7 @@
     const para = document.querySelector('p');
     let temperature = 29;
 
-    select.onchange = setWeather;
+    // select.onchange = setWeather;
 
     function setWeather() {
         const choice = select.value;
@@ -27,7 +27,7 @@
             para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
             return ('It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.');
             console.log('Sunny');
-        } esle if (choice === 'rainy') {
+        } else if (choice === 'rainy') {
             para.textContent = 'Rain is falling outside; take a rain coat and a brolly, and don\'t stay out for too long.';
         } else if (choice === 'snowing') {
             para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
