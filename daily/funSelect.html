@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Building blocks</title>
+    <link rel="stylesheet" href="./style-g.css" />
+</head>
+
+<header>
+    <div class="back">
+        <a href="C:\Users\Dmytro Gamza\Documents\GitHub\Microverse-learning-ODIN-JS\index.html">Take me back)</a>
+    </div>
+</header>
+
+<body>
+    <label for="theme">Select theme: </label>
+    <select id="theme">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+    </select>
+
+    <h1>This is my website</h1>
+
+    <script>
+        const select = document.querySelector('select');
+        const html = document.querySelector('html');
+
+        select.onchange = function () {
+            select.value === 'black' ? update('black', 'orange') : update('white', 'black');
+        }
+
+        function update(bgColor, textColor) {
+            html.style.backgroundColor = bgColor;
+            html.style.color = textColor;
+        }
+    </script>
+
+</body>
+
+
+</html>
