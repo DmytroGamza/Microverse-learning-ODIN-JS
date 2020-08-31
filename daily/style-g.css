@@ -45,3 +45,116 @@ h4,
   font-weight: 400;
 }
 
+p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.bg-1 {
+  background-image: url(../img/call.jfif);
+}
+
+.bg-orange {
+  background: #f9a743;
+}
+
+.bg-opacity {
+  position: relative;
+}
+
+.bg-opacity:before {
+  counter: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+a:focus,
+.btn:focus,
+.btn:active:focus {
+  box-shadow: none;
+  outline: 0 none;
+}
+
+a,
+a:active,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.font-size-60 {
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+@media (max-width: 575px) {
+  .font-size-60 {
+    font-size: 40px;
+  }
+}
+
+.md-10 {
+  margin-bottom: 10px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+  color: #777777;
+  padding-bottom: 70px;
+}
+
+.heading h2 {
+  color: #3c3c3c;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.heading p {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.subheading {
+  color: #3c3c3c;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 15px 40px;
+  display: inline-block;
+  background-color: #f9a743;
+  box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+  background-image: linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
+}
