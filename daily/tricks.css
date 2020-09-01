@@ -19,5 +19,66 @@ nav a {
     border-radius: 5px;
     color: white;
     padding: 5px 10px;
+}
 
+.main-1 {
+    background: white;
+    margin: 20px 0;
+    padding: 0px;
+}
+
+.center {
+    margin: 0 auto;
+    width: 200px;
+    background: black;
+    padding: 20px;
+    color: white;
+}
+
+main {
+    background: white;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+main div {
+    background: black;
+    color: wheat;
+    padding: 15px;
+    max-width: 125px;
+    margin: 5px;
+}
+
+.inline-block-center {
+    text-align: center;
+}
+
+.inline-block-center div {
+    display: inline-block;
+    text-align: left;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+main p {
+    background: black;
+    color: wheat;
+    padding: 15px;
+    max-width: 125px;
+    margin: 5px;
+}
+
+main p:nth-child(1) {
+    width: 200px;
+}
+
+main p:nth-child(2) {
+    width: 400px;
+}
+
+main p:nth-child(3) {
+    width: 125px;
 }
