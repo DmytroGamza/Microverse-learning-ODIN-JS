@@ -1,3 +1,158 @@
 .back {
     text-align: right;
 }
+
+body {
+    background: #f06d06;
+    font-size: 80%;
+}
+
+main {
+    background: white;
+    margin: 20px 0;
+    padding: 50px;
+}
+
+main a {
+    background: black;
+    color: white;
+    padding: 40px 30px;
+    text-decoration: none;
+}
+
+main div {
+    background: black;
+    color: white;
+    height: 100px;
+    line-height: 100px;
+    padding: 20px;
+    width: 25%;
+    white-space: nowrap;
+}
+
+table {
+    background: white;
+    width: 240px;
+    border-collapse: separate;
+    margin: 20px;
+    height: 250px;
+}
+
+table td {
+    background: black;
+    color: white;
+    padding: 20px;
+    border: 10px solid white;
+}
+
+.center-table {
+    display: table;
+    height: 250px;
+    background: white;
+    width: 240px;
+    margin: 20px;
+}
+
+.center-table p {
+    display: table-cell;
+    margin: 0;
+    background: black;
+    color: wheat;
+    padding: 20px;
+    border: 10px solid white;
+    vertical-align: middle;
+}
+
+.flex-center {
+    background: orchid;
+    color: white;
+    border: 10px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    resize: vertical;
+    overflow: auto;
+}
+
+.flex-center p {
+    margin: 0;
+    padding: 100px;
+}
+
+.like-div {
+    background: white;
+    width: 240px;
+    height: 200px;
+    margin: 20px;
+    color: white;
+    resize: vertical;
+    overflow: auto;
+    padding: 20px;
+}
+
+.ghost-center {
+    position: relative;
+}
+
+.ghost-center::before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 1%;
+    vertical-align: middle;
+}
+
+.ghost-center p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 190px;
+    margin: 0;
+    padding: 20px;
+    background: black;
+}
+
+.main-1 {
+    background: white;
+    height: 300px;
+    margin: 20px;
+    width: 300px;
+    position: relative;
+    resize: vertical;
+    overflow: auto;
+}
+
+.main-2 {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    height: 100px;
+    margin-top: -70px;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+.main-3 {
+    background: wheat;
+    height: 300px;
+    margin: 20px;
+    width: 300px;
+    position: relative;
+    resize: vertical;
+    overflow: auto;
+}
+
+.main-4 {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    padding: 20px;
+    transform: translateY(-50%);
+    resize: vertical;
+    overflow: auto;
+}
