@@ -160,5 +160,85 @@ table td {
 .main-5 {
     background: white;
     height: 300px;
-    
+    margin: 20px;
+    width: 300px;
+    position: relative;
+    padding: 50px;
+    display: table;
+}
+
+.main-6 {
+    background: black;
+    color: white;
+    padding: 20px 0 20px 0;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.main-7 {
+    background: white;
+    height: 300px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    resize: vertical;
+    overflow: auto;
+}
+
+.main-8 {
+    background: tomato;
+    color: teal;
+    padding: 20px;
+    resize: vertical;
+    overflow: auto;
+}
+
+.main-9 {
+    position: relative;
+    background: white;
+    height: 200px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    resize: both;
+    overflow: auto;
+}
+
+.main-10 {
+    background: yellowgreen;
+    color: black;
+    width: 200px;
+    height: 100px;
+    margin: -70px 0 0 -120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+}
+
+.main-11 {
+    position: relative;
+    background: white;
+    height: 200px;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    resize: both;
+    overflow: auto;    
+}
+
+.main-12 {
+    background: black;
+    color: blanchedalmond;
+    width: 50%;
+    transform: translate(-50%, 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    resize: both;
+    overflow: auto;
 }
