@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript baby steps</title>
+    <link rel="stylesheet" href="./style-p.css">
+</head>
+
+<body>
+    <div class="back">
+        <a href="../index.html">Take me home</a>
+    </div>
+
+    <h2>My first JavaScript</h2>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.
+    </button>
+
+    <p id="demo"></p>
+
+    <h2>What can JavaScript do?</h2>
+
+    <p id="demo1">JavaScript can change HTML content.</p>
+
+    <button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <button onclick="document.getElementById('myImage').scr = 'https://www.w3schools.com/js/pic_bulboff.gif'"> Turn on
+        the light</button>
+
+    <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="no alternative" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'"> Turn off
+        the light</button>
+
+</body>
+
+</html>
