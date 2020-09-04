@@ -1,0 +1,25 @@
+.back {
+    text-align: right;
+    text-decoration: none;
+}
+
+div a {
+    text-decoration: none;
+    margin: 0 50px 0 0;
+    font-size: 1rem;
+    color: darkorchid;
+}
+
+body {
+    background: lightblue;
+}
+
+div h1 {
+    color: wheat;
+    text-align: center;
+}
+
+div p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
