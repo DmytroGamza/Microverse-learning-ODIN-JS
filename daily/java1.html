@@ -5,6 +5,14 @@
     <meta charset="utf-8">
     <title>JavaScript baby steps</title>
     <link rel="stylesheet" href="./style-p.css">
+
+    <script>
+        function myFunction() {
+            document.getElementById('demo6').innerHTML = "Paragraph changed.";
+            document.getElementById('demo6').style.fontSize = '3rem';
+            document.getElementById('demo6').style.color = 'orange';
+        }
+    </script>
 </head>
 
 <body>
@@ -36,6 +44,47 @@
     <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'"> Turn off
         the light</button>
 
+    <section>
+        <h2>What can JavaScript do?</h2>
+        <p id="demo2">JavaScript can change the style of an HTML element></p>
+        <button type="button" onclick="document.getElementById('demo2').style.fontSize='2rem'">Click Me!</button>
+    </section>
+
+    <section>
+        <p id="demo3">JavaScript can hide HTML elements.</p>
+        <button type="button" onclick="document.getElementById('demo3').style.display='none'">Hide ME!</button>
+    </section>
+
+    <section>
+        <p>JavaScript can show hidden HTML elements</p>
+        <p id="demo4" style="display:none">HelLo JavaScript</p>
+        <button type="button" onclick="document.getElementById('demo4').style.display='block'">Click Me to see!</button>
+    </section>
+
+    <section>
+        <p>JavaScript in body</p>
+        <p id="demo5"></p>
+        <script>
+            document.getElementById('demo5').innerHTML = "My First JavaScript";
+        </script>
+    </section>
+
+    <section>
+        <p>JavaScript is in a Head tag</p>
+        <p id="demo6">A Paragraph</p>
+        <button type="button" onclick="myFunction()">Try it!</button>
+    </section>
+
+    <section>
+        <h2>External JavaScript</h2>
+        <p id="demo7">A Paragraph</p>
+        <button type="button" onclick="myFunc()">Try outsourse</button>
+    </section>
+
+
+    <script src="./main.js"></script>
+    <script src="https://www.w3schools.com/js/myScript.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

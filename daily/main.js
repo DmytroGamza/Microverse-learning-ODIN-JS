@@ -16,3 +16,9 @@
 
     $('.image-popup').magnificPopup({ type: 'image' });
 })(jQuery);
+
+
+function myFunc() {
+    document.getElementById('demo7').style.alignContent = 'center';
+    document.getElementById('demo7').style.color = 'green';
+}
