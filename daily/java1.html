@@ -81,6 +81,78 @@
         <button type="button" onclick="myFunc()">Try outsourse</button>
     </section>
 
+    <section>
+        <p>one more paragraph </p>
+        <p id="demo8"></p>
+        <script>
+            document.getElementById("demo8").innerHTML = 5 + 8;
+            document.write(10 - 7);            
+        </script>
+    </section>
+
+    <section>
+        <p>Using document.write can over write entire documnet if case called after load</p>
+        <button type="button" onclick="document.write(5 + 6)"> Try to over</button>
+        <p>document.write should only be use for testing</p>
+    </section>
+
+    <section>
+        <p>window alert</p>
+        <script>
+            window.alert("press ok");
+            console.log(41500 - 500);
+        </script>
+        <button type="button" onclick="window.print()">Print this page</button>
+    </section>
+
+    <section>
+        <p id="demo9"></p>
+        <script>
+            document.getElementById("demo9").innerHTML = "Hello Dolly.";
+        </script>
+    </section>
+
+    <section>
+        <p id="demo10"></p>
+        <script>
+            var a, b, c;
+            a = 21; b = 7;
+            c = a + b;
+            document.getElementById("demo10").innerHTML = c;
+        </script>
+    </section>
+
+    <section>
+        <p>JavaScript code blocks are written between { and }</p>
+        <button type="button" onclick="myFunc1()">Click Me to check functionality</button>
+        <p id="demo11"></p>
+        <p id="demo12"></p>
+
+        <script>
+            function myFunc1() {
+                document.getElementById("demo11").innerHTML = "Hello Dolly!";
+                document.getElementById("demo12").innerHTML = "How are you?";
+            }
+        </script>
+
+    </section>
+
+    <section>
+        <p>Number can be with or wthout decimals</p>
+        <p id="demo13"></p>
+        <p id="demo14"></p>
+        <p id="demo15"></p>
+        <script>
+            var q;
+            q = 6;
+            document.getElementById("demo13").innerHTML = 10.50;
+            document.getElementById("demo14").innerHTML = "John Smith";
+            document.getElementById("demo15").innerHTML = q;
+        </script>
+    </section>
+
+
+
 
     <script src="./main.js"></script>
     <script src="https://www.w3schools.com/js/myScript.js"></script>
