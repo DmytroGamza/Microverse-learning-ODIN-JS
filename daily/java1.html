@@ -203,6 +203,42 @@
         </div>
     </section>
 
+    <section>
+        <p>Click the button to get a square root of each element in the array.</p>
+        <button onclick="myFunc2()">Try it Now!</button>
+
+        <p id="demo19"></p>
+
+        <script>
+            var numbers = [121, 9, 16, 25];
+
+            function myFunc2() {
+                r = document.getElementById("demo19")
+                r.innerHTML = numbers.map(Math.sqrt);
+            }
+        </script>
+    </section>
+
+    <section>
+        <p>Multiply every element in the array with 10:</p>
+        <p id="demo20"></p>
+
+        <script>
+            var array1 = [65, 12, 42, 9];
+            var newarray1 = array1.map(myFunc3)
+
+            function myFunc3(num) {
+                return num * 10;
+            }
+
+            document.getElementById("demo20").innerHTML = newarray1;
+        </script>
+    </section>
+
+    <section>
+        <p>Click the button to get a new array with the full name of each person in the array</p>
+
+    </section>
 
 
 
