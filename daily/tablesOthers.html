@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-sclae=1.0" />
+    <title>lessons 14Sep2020</title>
+    <link rel="stylesheet" href="./style-p.css">
+
+    <script>    </script>
+</head>
+
+<body>
+    <div class="back">
+        <a href="../index.html"> Take me home</a>
+    </div>
+
+    <h2>Tables in HTML</h2>
+
+    <br>
+    <table border="2" cellspacing="5" cellpadding="25" width="200px" bgcolor="ee983f">
+        <th>Head of table</th>
+        <tr align="center" valign="top">75mm</tr>
+        <td align="right">88mm</td>
+        <tr>105mm</tr>
+        <td valign="bottom">152mm</td>
+        <td colspan="50"></td>
+        <td rowspan="5"></td>
+        <td nowrap> much more difficult to write XHTML than it is to write properly formed HTML. There
+        </td>
+    </table>
+
+    <strong>This is correct</strong> <br>
+    <strong><em>This is correct nesting</em></strong>
+    <br>
+    <img src="../img/actual-price.jpg" alt="some pricing" />
+
+    <div>
+        <h1>Heading elements</h1>
+        <h2>Summary</h2>
+        <p>Some text here...</p>
+
+        <h2>Examples</h2>
+        <h3>Example 1</h3>
+        <p>Some text here...</p>
+
+        <h3>Example 2</h3>
+        <p>Some text here...</p>
+
+        <h2>See also</h2>
+        <p>Some text here...</p>
+    </div>
+
+    <div>
+        <p>
+            Geckos are a group of usually small, usually nocturnal
+            lizards. They are found on every continent except Australia.
+        </p>
+        <p>
+            Some species live in houses where they hunt
+            insects attracted by artificial light.
+        </p>
+    </div>
+
+    <section>
+        <p>How hard to read? See for yourself:
+            <button data-toggle-text="Oh no! Switch back">Use something else for P</button>
+            <br>
+        <p>In very old writing, paragraphs were separated with a
+            special character: ¶, the <i>pilcrow</i>. Nowadays, this
+            is considered claustrophobic and hard to read.</p>
+        <button>Hit ME!</button>
+        </p>
+    </section>
+
+    <script>
+        document.querySelector('button').addEventListener('click', function (event) {
+            document.querySelectorAll('p').forEach(function (paragraph) {
+                paragraph.classList.toggle('pilcrow');
+            });
+            var newButtonText = event.target.dataset.toggleText;
+            var oldText = event.target.innerText;
+            event.target.innerText = newButtonText;
+            event.target.dataset.toggleText = oldText;
+        });
+    </script>
+</body>
+
+
+
+</html>
