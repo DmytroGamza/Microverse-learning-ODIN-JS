@@ -237,7 +237,104 @@
 
     <section>
         <p>Click the button to get a new array with the full name of each person in the array</p>
+        <button onclick="myFunc4()">Try it NOW!</button>
+        <p>New array: <span id="demo21"></span></p>
 
+        <script>
+            var persons = [
+                { firstname: "Malcom", lastname: "Reynolds" },
+                { firstname: "Kaylee", lastname: "Frye" },
+                { firstname: "Jayne", lastname: "Cobb" }
+            ];
+
+            function getFullName(item) {
+                var fullname = [item.firstname, item.lastname].join(" ");
+                return fullname;
+            }
+
+            function myFunc4() {
+                document.getElementById("demo21").innerHTML = persons.map(getFullName);
+            }
+        </script>
+    </section>
+
+    <section>
+        <p>Click the button to get every element in the array that has a value of 18 or more</p>
+        <button onclick="myFunc5()">Filter() part in action</button>
+        <p id="demo22"></p>
+
+        <script>
+            var ages = [11, 32, 34, 62, 16];
+
+            function checkAdult(age) {
+                return age >= 18;
+            }
+
+            function myFunc5() {
+                document.getElementById("demo22").innerHTML = ages.filter(checkAdult);
+            }
+        </script>
+    </section>
+
+    <section>
+        <p>Substract the numbers in the array, starting from the left:</p>
+        <p id="demo23"></p>
+
+        <script>
+            var number1 = [175, 50, 25];
+
+            document.getElementById("demo23").innerHTML = number1.reduce(myFunc6);
+
+            function myFunc6(total, num) {
+                return total - num;
+            }
+        </script>
+    </section>
+
+    <section>
+        <scritp>
+            class Vegetable {
+            constructor(name) {
+            this.name = name;
+            }
+            }
+
+            const carrot = new Vegetable("carrot");
+            console.log(carrot.name);
+        </scritp>
+    </section>
+
+    <section>
+        <h2>The += Operator</h2>
+        <p id="demo24"></p>
+        <p id="demo25"></p>
+        <p id="demo26"></p>
+
+        <script>
+            var r = 10;
+            r += 5;
+            document.getElementById("demo24").innerHTML = r;
+            var txt3 = "John", txt4 = "Smith";
+            document.getElementById("demo25").innerHTML = txt3 + " " + txt4;
+            txt5 = "What a very ";
+            txt5 += "nice day";
+            document.getElementById("demo26").innerHTML = txt5;
+        </script>
+    </section>
+
+    <section>
+        <p>A typical arithmetic operation takes two numbers (or experssions) and produces a new number.</p>
+
+        <p id="demo27"></p>
+        <p id="demo28"></p>
+
+        <script>
+            var a = 4;
+            var x = (200 + 10) * a;
+            document.getElementById("demo27").innerHTML = x;
+            var t = 5;
+            document.getElementById("demo28").innerHTML = Math.pow(t, 2);
+        </script>
     </section>
 
 
