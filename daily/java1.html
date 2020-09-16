@@ -337,6 +337,98 @@
         </script>
     </section>
 
+    <section>
+        <p>When adding number and a string JavaScript will treat the number as a string</p>
+        <br>
+        <p id="demo29"></p>
+        <br>
+        <p>JavaScript evalutes experssions from left to right. Different sequences will produce different result</p>
+        <br>
+        <p id="demo30"></p>
+        <br>
+        <p>JavaScript has dumanic types. This means that the sae variabe can be used to hold
+            different data types:</p>
+        <br>
+        <p id="demo31"></p>
+        <br>
+        <p>String are written with quotes. You can use single or double quotes: <br>
+            You can use quotes inside a string, as long as they don't matched surrounding
+            of string</p>
+        <p id="demo32"></p>
+        <br>
+        <p>Extra large or extra small numbers can be written with scientific
+            (exponential) notation:
+        </p>
+        <p id="demo33"></p>
+        <br>
+        <p>JavaScript Booleans <br>
+            Booleans can only have two values: true or false</p>
+        <p id="demo34"></p>
+        <br>
+        <p>JavaScript Arrays<br>
+            JavaScript arrays are written with square brackets. Array items are separated by commas. <br>
+            the following code deceare array var cars = ["Saab", "Volvo", "BMW"];
+            </b>
+        </p>
+        <br>
+        <p>
+            JavaScript Objects are written with curly braces {}.
+            Object properties are written as name:value pairs, separated by commas.
+        </p>
+        <p id="demo35"></p>
+        <br>
+        <p>The typeof operator returns the type of a variable or an experssions</p>
+        <p><br>and as well <br></p>
+        <p>The value (and the data type) of a variable with no value is
+            <b>undefined</b></p>
+        <p id="demo36"></p>
+        <p>AN empty string has both a legal value and a type:</p>
+        <br>
+        <p>In JavaScript <b>null</b> is "nothing". It is supposed to be something that doesn't
+            exit. Unfortunately, in JavaScript, the data type of <b>null</b> is an
+            object</p>
+        <p>You can consider it a bug in JavaScript that <b>typeof null</b> is an object
+            It should be <b>null</b></p>
+        <p>You can empty an object by setting it to <b>null</b></p>
+        <p id="demo37"></p>
+
+
+
+        <script>
+            var t = 16 + "volvo";
+            document.getElementById("demo29").innerHTML = t;
+            var u = 20 - 4 + "Volvo";
+            document.getElementById("demo30").innerHTML = u;
+            var answer1 = "It's alright", answer2 = "He is called 'Johnny'",
+                answer3 = 'He is called "Johnny"';
+            document.getElementById("demo32").innerHTML = answer1 + "<br>" + answer2 + "<br>" + answer3;
+            var o = 123e7, p = 123e-12;
+            document.getElementById("demo33").innerHTML = o + "<br>" + p;
+            var a = 5, s = 5, d = 6;
+            document.getElementById("demo34").innerHTML = (a == s) + "<br>" + (a == d);
+            var person = {
+                firstName: "John",
+                lastName: "Doe",
+                age: 50,
+                eyeColor: "blue"
+            };
+            document.getElementById("demo35").innerHTML = person.firstName + " is "
+                + person.age + " years old.";
+            var shops;
+            document.getElementById("demo36").innerHTML = typeof "Smith" + "<br>" +
+                typeof 3.14 + "<br>" + shops + "<br>" + typeof shops;
+            var person1 = {
+                firstName: "John",
+                lastName: "Doe",
+                age: 50,
+                eyeColor: "blue"
+            };
+            person1 = null;
+            document.getElementById("demo37").innerHTML = typeof person1;
+        </script>
+    </section>
+
+
 
 
     <script src="./main.js"></script>
