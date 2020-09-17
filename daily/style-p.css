@@ -56,3 +56,9 @@ aside > p {
 p {
     font-family: 'Fira Sans', sans-serif;
 }
+
+.col {
+  /*  text-decoration-color: red; */
+    color: red;
+    background-color: rosybrown;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewpont" content="width=device-width, intial-scale=1.0">
+    <title>W3 JavaScript functions</title>
+    <link rel="stylesheet" href="./style-p.css">
+</head>
+
+<body>
+    <div class="back">
+        <a href="../index.html">Take me home</a>
+    </div>
+
+    <section>
+        <p>A JavaScript function is a block of code designed to perform a particular task.</p>
+        <p>A JavaScript function is executed when "something" invokes it (calls it).</p>
+        <br>
+        <p>This example calls a function which performs a calculation, and return
+            the results:
+        </p>
+        <p id="demo1"></p>
+        <br>
+        <p>function name(parameter1, parameter2, parameter3) {
+            // code to be executed
+            }</p>
+        <br>
+        <p>The code inside the function will execute when "something" <b>invokes</b>
+            (calls the function):</p>
+        <ul>
+            <li>When a event occurs (when a user clicks a button)</li>
+            <li>When it is invoked (called) from JavaScript code</li>
+            <li>Automatically (self invoked)</li>
+        </ul>
+        <h4>Return</h4>
+        <p>When JavaScript reaches a <span class="col">return</span> statement, the function
+            will stop executing.</p>
+
+        <script>
+            function myFunction1(p1, p2) {
+                return p1 * p2;
+            }
+            document.getElementById("demo1").innerHTML = myFunction1(4, 8);
+        </script>
+
+    </section>
+
+</body>
+
+</html>
