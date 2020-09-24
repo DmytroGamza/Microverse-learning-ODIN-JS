@@ -56,7 +56,39 @@
         document.getElementById("demo1").innerHTML = toCelsius(23);
     </script>
     <section>
+        <h4>Local Variebles</h4>
+        <p>Variebles decleared within a JavaScript fucntion, become <b>LOCAL</b>
+            to the function</p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <h3>JavaScript Objects</h3>
+        <span>JavaScript Objects are containers for <b>name values</b>
+            called properties or methods</span>
+        <h4>Object Defination</h4>
+        <span>You define and create a JSO with an Object literal</span>
+        <p id="demo6"></p>
 
+        <script>
+            myFunction2();
+
+            function myFunction2() {
+                var carName = "Volvo";
+                document.getElementById("demo2").innerHTML = typeof carName + " "
+                    + carName;
+            }
+
+            document.getElementById("demo3").innerHTML = typeof carName;
+            var car1 = "Fiat";
+            document.getElementById("demo4").innerHTML = car1;
+            var carObject = { type: "Fiat", model: "500", color: "white" };
+            document.getElementById("demo5").innerHTML = "The car type is " +
+                carObject.model;
+
+            var person = { firstName: "John", lastName: "Smith", age: 50, eyeColor: "blue" };
+
+        </script>
     </section>
 
 </body>
