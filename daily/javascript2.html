@@ -55,6 +55,7 @@
         }
         document.getElementById("demo1").innerHTML = toCelsius(23);
     </script>
+
     <section>
         <h4>Local Variebles</h4>
         <p>Variebles decleared within a JavaScript fucntion, become <b>LOCAL</b>
@@ -69,6 +70,13 @@
         <h4>Object Defination</h4>
         <span>You define and create a JSO with an Object literal</span>
         <p id="demo6"></p>
+        <br>
+        <P>Ways to access an objects</P>
+        <hr>
+        <p id="demo7"></p>
+        <span id="demo8"></span> <br>
+        <span id="demo9"></span>
+        <p>Avoid <mark>String</mark>,<mark>Number</mark> and <mark>Boolean</mark> objects</p>
 
         <script>
             myFunction2();
@@ -86,10 +94,37 @@
             document.getElementById("demo5").innerHTML = "The car type is " +
                 carObject.model;
 
-            var person = { firstName: "John", lastName: "Smith", age: 50, eyeColor: "blue" };
+            var person = { firstName: "John", lastName: "Smith", age: 50, eyeColor: "blue", id: 5564 };
+            document.getElementById("demo7").innerHTML = person.firstName + " his id is: " + person.id;
+            document.getElementById("demo8").innerHTML = person["firstName"] + " passed away in age of - " +
+                person["age"];
 
+            var personUA = {
+                firstName: "Vovochka",
+                lastName: "Zelenski",
+                id: 5566,
+                fullName: function () {
+                    return this.firstName + " " + this.lastName + " prosto idiot";
+                }
+            };
+            document.getElementById("demo9").innerHTML = personUA.fullName();
+          //  alert(personUA.fullName);
         </script>
     </section>
+
+    <section>
+        <h2>JavaScript Events</h2>
+        <br>
+        <span>Here are some example of HTML events:</span>
+        <ul>
+            <li>an HTML web page has finished loading</li>
+            <li>an HTML input field was changed</li>
+            <li>an HTML button was clicked</li>
+        </ul>
+
+    </section>
+
+
 
 </body>
 
