@@ -62,3 +62,36 @@ p {
     color: red;
     background-color: rosybrown;
 }
+
+ul.menu li.firefox a {
+background-position: 0 0;
+align-items: center;
+margin-top: 30px;
+}
+ul.menu li.chrome a {
+background-position: 0 -100px;
+}
+ul.menu li.ie a {
+background-position: 0 -200px;
+}
+ul.menu li.safari a {
+background-position: 0 -300px;
+}
+ul.menu li.opera a {
+background-position: 0 -400px;
+}
+
+
+div p { 
+  font-size: 100px 
+} 
+.a { 
+  font-family: Helvetica 
+} 
+.b { 
+  font-family: Gruppo 
+} 
+.c { 
+  font-family: Catamaran 
+}
+
